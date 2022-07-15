@@ -32,6 +32,8 @@ if($action == "create")
 
     if (empty($errors)) {
         //1. Verbinding
+        require_once 'conn.php';
+
         //2. Query
         $query = "INSERT INTO taken (titel, beschrijving, afdeling, deadline) VALUES(:titel, :beschrijving, :afdeling, :deadline)";
 
