@@ -12,8 +12,9 @@
 
     <main>
         <div class="wrapper">
+            <button class="create-button"><a href="<?php echo $base_url; ?>/tasks/create.php">create</a></button>
             <div class="container">
-
+            
             </div>
         </div>
     </main>
