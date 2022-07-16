@@ -12,12 +12,10 @@
 
     <main>
         <div class="wrapper">
-          
-            <div class="container">
-            <h1>Nieuwe taak</h1>
+            <h2 class="new-task">Nieuwe taak</h2>
 
             <form action="<?php echo $base_url; ?>/backend/tasksController.php" method="POST">
-            
+                
                 <input type="hidden" name="action" value="create">
                 <div class="form-group">
                     <label for="titel">Titel</label>
@@ -43,9 +41,9 @@
                     <label for="deadline">Deadline</label>
                     <input type="date" name="deadline" id="deadline" class="form-input">
                 </div>
-                <input type="submit" value="Taak aanmaken" class="create-button">
-            </form>
-            </div>         
+                <input type="submit" value="Taak aanmaken" class="create-button create">
+                <button class="cancel"><a href="<?php echo $base_url; ?>/tasks/index.php">Annuleren</a></button>
+            </form>         
 
         </div>
     </main>

@@ -155,15 +155,65 @@ main{
   padding: 4px;
 }
 
+.create{
+  margin-bottom: 370px;
+}
+
 button a{
   text-decoration: none;
   color: #ffffff;
 }
 
-h1{
+.new-task{
   margin-top: 0px;
-  padding-top: 10px;
+  padding-top: 100px;
 }
+
+.panels{
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel{
+  min-height: 500px;
+  /* background-color: #000; */
+  width: 295px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.panel1{
+  background-color: #edd72f;
+}
+
+.panel2{
+  background-color: #2f80ed;
+}
+
+.panel3{
+  background-color: #27ae60;
+}
+
+.panel h2{
+  color: #ffffff;
+}
+
+.tasks-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel{
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #fc1303;
+  color: #ffffff;
+  padding: 4px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
