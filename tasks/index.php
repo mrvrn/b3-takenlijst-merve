@@ -45,8 +45,8 @@
             <div class="tasks-top">
                 <h1>Takenlijst</h1>
                 <div class="buttons">
-                    <button class="create-button"><a href="<?php echo $base_url; ?>/tasks/notdone.php"><i class="fa-solid fa-clipboard-list"></i>To Do</a></button>
-                    <button class="create-button"><a href="<?php echo $base_url; ?>/tasks/done.php"><i class="fa-solid fa-circle-check"></i>Done</a></button>
+                    <button class="todo-button create-button"><a href="<?php echo $base_url; ?>/tasks/notdone.php"><i class="fa-solid fa-clipboard-list"></i>To Do</a></button>
+                    <button class="done-button create-button"><a href="<?php echo $base_url; ?>/tasks/done.php"><i class="fa-solid fa-circle-check"></i>Done</a></button>
                     <button class="create-button"><a href="<?php echo $base_url; ?>/tasks/create.php"><i class="fa-solid fa-circle-plus"></i>Voeg taak toe</a></button>
                 </div>
             </div> 
