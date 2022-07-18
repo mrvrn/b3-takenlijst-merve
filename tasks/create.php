@@ -8,7 +8,31 @@
 
 <body>
 
-    <?php require_once '../header.php'; ?>
+    <?php require_once '../header.php'; 
+
+    if (isset($_GET['error'])) {
+        $errors = $_GET['error'];
+        $hasError = true;
+    } 
+    
+    else {
+        $hasError = false;
+    }
+    ?>
+<!-- 
+    <?php if ($hasError): ?>
+        <div class="errors alert alert-danger">
+            <?php foreach ($errors as $error): ?>
+                <?php if ($error == "empty_title"): ?>
+                    <p>Vul een titel in.</p>
+                <?php elseif ($error == "empty_desc"): ?>
+                    <p>Vul een beschrijving in.</p>
+                <?php elseif ($error == "empty_dep"): ?>
+                    <p>Kies een afdeling.</p>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+        <?php endif; ?> -->
 
     <main>
         <div class="wrapper">
@@ -47,6 +71,8 @@
 
         </div>
     </main>
+    <footer>
+    </footer>
 
 </body>
 
