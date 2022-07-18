@@ -9,7 +9,7 @@
 <body>
 
     <?php require_once '../header.php'; ?>
-    <main class="edit-main">
+    <main>
         <div class="container">
             <h1>Taak aanpassen</h1>
 
